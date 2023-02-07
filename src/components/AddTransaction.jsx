@@ -2,7 +2,8 @@ import React from "react";
 
 const AddTransaction = () => {
   return (
-    <di>
+    <>
+      <h3>Add new transaction</h3>
       <form>
         <div className="form-control">
           <label htmlFor="text">Text</label>
@@ -17,7 +18,7 @@ const AddTransaction = () => {
         </div>
         <button className="btn">Add transaction</button>
       </form>
-    </di>
+    </>
   );
 };
 
