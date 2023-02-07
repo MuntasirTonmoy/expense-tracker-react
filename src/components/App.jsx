@@ -1,4 +1,5 @@
 import React from "react";
+import AddTransaction from "./AddTransaction";
 import "./App.css";
 import Balance from "./Balance";
 import Header from "./Header";
@@ -13,6 +14,7 @@ function App() {
         <Balance />
         <IncomeExpense />
         <TransactionList />
+        <AddTransaction />
       </div>
     </div>
   );
