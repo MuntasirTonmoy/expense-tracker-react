@@ -1,4 +1,5 @@
 import React from "react";
+import GlobalProvider from "../context/GlobalState";
 import AddTransaction from "./AddTransaction";
 import "./App.css";
 import Balance from "./Balance";
@@ -11,10 +12,12 @@ function App() {
     <div className="App">
       <Header />
       <div className="container">
-        <Balance />
-        <IncomeExpense />
-        <TransactionList />
-        <AddTransaction />
+        <GlobalProvider>
+          <Balance />
+          <IncomeExpense />
+          <TransactionList />
+          <AddTransaction />
+        </GlobalProvider>
       </div>
     </div>
   );
