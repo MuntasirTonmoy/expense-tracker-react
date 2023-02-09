@@ -9,7 +9,7 @@ const AddTransaction = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const id = crypto.randomUUID();
-    const newTransaction = { id, text, amount };
+    const newTransaction = { id, text, amount: +amount };
     addTransaction(newTransaction);
   };
   return (
