@@ -23,6 +23,13 @@ const GlobalProvider = ({ children }) => {
       payload: id,
     });
   };
+
+  const addTransaction = transaciton => {
+    dispatch({
+      type: "ADD_TRANSACTION",
+      payload: transaciton,
+    });
+  };
   return (
     <GlobalContext.Provider
       value={{
