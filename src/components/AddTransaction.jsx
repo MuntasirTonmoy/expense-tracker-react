@@ -7,7 +7,7 @@ const AddTransaction = () => {
   const [amount, setAmount] = useState(0);
 
   const handleSubmit = e => {
-    e.preventDefault;
+    e.preventDefault();
     const id = crypto.randomUUID();
     const newTransaction = { id, text, amount };
     addTransaction(newTransaction);
