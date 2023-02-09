@@ -9,7 +9,12 @@ const Transaction = ({ transaction }) => {
       className={transaction.amount > 0 ? "plus" : "minus"}
     >
       {transaction.text} <span>${transaction.amount}</span>
-      <button className="delete-btn">x</button>
+      <button
+        onClick={() => deleteTransaction(transaction.id)}
+        className="delete-btn"
+      >
+        x
+      </button>
     </li>
   );
 };
