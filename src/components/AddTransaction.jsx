@@ -11,6 +11,8 @@ const AddTransaction = () => {
     const id = crypto.randomUUID();
     const newTransaction = { id, text, amount: +amount };
     addTransaction(newTransaction);
+    setText("");
+    setAmount(0);
   };
   return (
     <>
